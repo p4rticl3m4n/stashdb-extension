@@ -2,6 +2,11 @@
   "name": "stashdb-extension",
   "version": "0.1",
   "manifest_version": 3,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "stashdb-extension@example.com"
+    }
+  },
   "permissions": [
     "background",
     "activeTab",
@@ -10,10 +15,12 @@
     "unlimitedStorage"
   ],
   "host_permissions": [
-    "*://*:*/*"
+    "<all_urls>"
   ],
   "background": {
-    "service_worker": "background.js"
+    "scripts": [
+      "background.js"
+    ]
   },
   "content_scripts": [
     {
