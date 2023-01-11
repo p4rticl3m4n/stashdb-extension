@@ -8,17 +8,19 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "stashdb-extension@example.com",
-      "strict_min_version": "109"
+      "strict_min_version": "109.0"
     }
   },
+  "host_permissions": [
+    "https://stashdb.org/*"
+  ],
   "permissions": [
     "activeTab",
-    "tabs",
-    "storage",
-    "unlimitedStorage"
+    "storage"
   ],
   "background": {
-    "page": "background.html"
+    "scripts": ["background.js"]
+    // "page": "background.html"`
   },
   "content_scripts": [
     {
@@ -50,6 +52,7 @@
     }
   ],
   "action": {
-    "default_popup": "settings/settings.html"
+    "default_popup": "settings/settings.html",
+    "default_title": "StashDB Extension"
   }
 }
