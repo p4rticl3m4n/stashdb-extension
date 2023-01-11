@@ -1,10 +1,12 @@
 # Extension linking stashdb and your local stash
 
+**This extension has been modified from the original to work in Firefox version 109.0+**
+
 ## Getting Started
 
 1. Download the latest release `xpi` file.
 2. After installing, right click on entension and select *Manage Extension*.
-3. Click on the *Permissions* tab and grant permission to "Access your data for https://stashdb.org".
+3. Click on the *Permissions* tab and grant permission to "Access your data for http[]()s://stashdb.org".
 
 The extension is now ready to use!
 
